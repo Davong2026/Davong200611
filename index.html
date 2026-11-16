@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ທ້າວ ດາວວົງ ບົວເຄຶອ - Portfolio</title>
+    <!-- Tailwind CSS CDN ສຳລັບຄວາມວ່ອງໄວ ແລະ ທັນສະໄໝ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome ສຳລັບ Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Phetsarath / Noto Sans Lao) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="w-full py-6 px-6 md:px-12 flex justify-between items-center border-b border-slate-800">
+        <h1 class="text-xl font-bold tracking-wider text-indigo-400">DAWVONG.DEV</h1>
+        <div class="flex gap-4 text-slate-400">
+            <a href="https://github.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github text-xl"></i></a>
+            <a href="mailto:hokkom671@gmail.com" class="hover:text-white transition"><i class="fa-solid fa-envelope text-xl"></i></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-12 max-w-4xl">
+        
+        <!-- Profile Hero Section -->
+        <div class="glass-card rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col md:flex-row items-center gap-8 mb-10">
+            <!-- ຮູບ Profile (ສາມາດປ່ຽນ Link ຮູບໄດ້ທີ່ src) -->
+            <div class="relative">
+                <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-indigo-500 shadow-lg bg-slate-700 flex items-center justify-center">
+                    <img id="profile-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60" alt="Profile" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute bottom-2 right-2 bg-emerald-500 w-5 h-5 rounded-full border-2 border-slate-900" title="Available"></div>
+            </div>
+
+            <!-- ຂໍ້ມູນສ່ວນຕົວ -->
+            <div class="text-center md:text-left flex-1">
+                <span class="bg-indigo-500/20 text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Web Developer Student</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 text-white">ທ້າວ ດາວວົງ ບົວເຄຶອ</h2>
+                <p class="text-slate-400 mt-1">ນັກສຶກສາສາຂາ ພັດທະນາເວັບໄຊ</p>
+                <p class="text-sm text-slate-300 italic mt-4 bg-slate-800/60 p-3 rounded-xl border border-slate-700/50">
+                    "ຄໍາຄົມ: ບໍ່ໄດ້ຫລໍ່ພໍເລຶອກໄດ້ ແຕ່ກະພໍເລຶອກໄດ້ກັບຄົນທີ່ຂ້ອຍມັກ"
+                </p>
+            </div>
+        </div>
+
+        <!-- Details Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- ຂໍ້ມູນສ່ວນຕົວ (Personal Info) -->
+            <div class="glass-card rounded-2xl p-6 shadow-lg">
+                <h3 class="text-lg font-semibold text-indigo-400 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-user-pen"></i> ຂໍ້ມູນສ່ວນຕົວ
+                </h3>
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li class="flex justify-between border-b border-slate-800 pb-2">
+                        <span class="text-slate-400">ວັນເດືອນປີເກີດ:</span>
+                        <span class="font-medium">23 / 11 / 2006</span>
+                    </li>
+                    <li class="flex justify-between border-b border-slate-800 pb-2">
+                        <span class="text-slate-400">ທີ່ຢູ່:</span>
+                        <span class="font-medium">ບ້ານ ຫາດຊອນ, ເມຶອງ ຍົມມະລາດ, ແຂວງ ຄຳມ່ວນ</span>
+                    </li>
+                    <li class="flex justify-between border-b border-slate-800 pb-2">
+                        <span class="text-slate-400">ບ່ອນຮຽນ:</span>
+                        <span class="font-medium">ວິທະຍາໄລ ເຕັກນິກ ວິຊາຊິບ ແຂວງ ຄຳມ່ວນ</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span class="text-slate-400">ສາຂາຮຽນ:</span>
+                        <span class="font-medium text-indigo-300">ພັດທະນາເວັບໄຊ</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ຊ່ອງທາງການຕິດຕໍ່ & ຄວາມມັກ (Contact & Hobbies) -->
+            <div class="glass-card rounded-2xl p-6 shadow-lg flex flex-col justify-between">
+                <div>
+                    <h3 class="text-lg font-semibold text-indigo-400 mb-4 flex items-center gap-2">
+                        <i class="fa-solid id-card fa-address-book"></i> ການຕິດຕໍ່ ແລະ ຄວາມສົນໃຈ
+                    </h3>
+                    <ul class="space-y-3 text-sm text-slate-300 mb-6">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-indigo-400 w-5"></i>
+                            <span>+856 20 77093574</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-indigo-400 w-5"></i>
+                            <a href="mailto:hokkom671@gmail.com" class="hover:underline text-indigo-300">hokkom671@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-star text-amber-400 w-5"></i>
+                            <span>ມັກນັກຮ້ອງວົງ BTS (ມັກສຸດແມ່ນ Jungkook 💜)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-futbol text-emerald-400 w-5"></i>
+                            <span>ຄວາມສາມາດພິເສດ: ຫຼິ້ນກິລາໄດ້ (ມັກເຕະກະຕໍ້)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="mailto:hokkom671@gmail.com" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-xl text-center transition shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> ຕິດຕໍ່ຂ້ອຍ
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-6 text-center text-xs text-slate-500 border-t border-slate-800 mt-12">
+        <p>&copy; 2026 Dawvong BuaKeua. Built with Passion & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
